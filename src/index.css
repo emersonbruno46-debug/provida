@@ -3,17 +3,28 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* altura da barra fixa móvel (sem safe-area) */
+    --mobile-cta-h: 68px;
+  }
+
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
     -webkit-tap-highlight-color: transparent;
   }
 
+  /* Evita que âncoras/foco fiquem atrás da barra fixa no mobile */
+  @media (max-width: 767.98px) {
+    html {
+      scroll-padding-bottom: calc(var(--mobile-cta-h) + env(safe-area-inset-bottom) + 12px);
+    }
+  }
+
   body {
     overflow-x: hidden;
   }
 
-  /* Editorial typography refinements */
   h1, h2, .font-serif {
     letter-spacing: -0.025em;
   }
@@ -21,9 +32,26 @@
   p {
     line-height: 1.7;
   }
+
+  /* Foco visível consistente para teclado */
+  :focus-visible {
+    outline: 3px solid #6D182E;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  .bg-wine-dark :focus-visible,
+  .bg-wine-deep :focus-visible,
+  .bg-wine:focus-visible {
+    outline-color: #E8C59A;
+  }
 }
 
-/* Reduced motion accessibility */
+@layer utilities {
+  .pb-mobile-cta {
+    padding-bottom: calc(var(--mobile-cta-h) + env(safe-area-inset-bottom));
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -38,7 +66,6 @@
   }
 }
 
-/* Custom minimal scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }

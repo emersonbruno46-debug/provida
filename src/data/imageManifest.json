@@ -1,0 +1,124 @@
+{
+  "professionals": {
+    "breno-oliveira-silva": {
+      "width": 1086,
+      "height": 1448
+    },
+    "debora-silveira": {
+      "width": 1086,
+      "height": 1448
+    },
+    "dr-adelhane-martins-sanches": {
+      "width": 1068,
+      "height": 1599
+    },
+    "dr-alexandre-morais": {
+      "width": 1024,
+      "height": 1536
+    },
+    "dr-fabio-araujo": {
+      "width": 1086,
+      "height": 1448
+    },
+    "dr-flavio-fabiano": {
+      "width": 1122,
+      "height": 1402
+    },
+    "dr-gustavo-l-mendes": {
+      "width": 1024,
+      "height": 1536
+    },
+    "dr-joao-carlos-pena": {
+      "width": 1024,
+      "height": 1536
+    },
+    "dr-jovelino-pinheiro": {
+      "width": 1082,
+      "height": 1454
+    },
+    "dr-luiz-eduardo-ribeiro-coelho": {
+      "width": 1086,
+      "height": 1448
+    },
+    "dr-pedro-vilela": {
+      "width": 1091,
+      "height": 1442
+    },
+    "dr-saulo-corradi": {
+      "width": 1024,
+      "height": 1536
+    },
+    "dr-tonyato-maia": {
+      "width": 1086,
+      "height": 1448
+    },
+    "dra-aline-guimaraes": {
+      "width": 1122,
+      "height": 1402
+    },
+    "dra-bruna-luiza": {
+      "width": 941,
+      "height": 1672
+    },
+    "dra-daniela-rodrigues": {
+      "width": 1122,
+      "height": 1402
+    },
+    "dra-ellen-leal": {
+      "width": 1024,
+      "height": 1536
+    },
+    "dra-isadora-caldeira": {
+      "width": 1122,
+      "height": 1402
+    },
+    "dra-mariana-goncalves": {
+      "width": 1122,
+      "height": 1402
+    },
+    "dra-sthefane-freitas": {
+      "width": 1122,
+      "height": 1402
+    },
+    "dra-thays-dias-lopes": {
+      "width": 1145,
+      "height": 1374
+    },
+    "marcine-fernanda": {
+      "width": 1086,
+      "height": 1448
+    },
+    "noelma": {
+      "width": 1086,
+      "height": 1448
+    },
+    "paulo-ricardo": {
+      "width": 897,
+      "height": 1753
+    },
+    "rosangela-borges": {
+      "width": 1122,
+      "height": 1402
+    },
+    "shirlane-varella": {
+      "width": 1103,
+      "height": 1426
+    },
+    "tamires-coutinho": {
+      "width": 1122,
+      "height": 1402
+    }
+  },
+  "hero": {
+    "width": 1600,
+    "height": 900
+  },
+  "about": {
+    "width": 1200,
+    "height": 1126
+  },
+  "og": {
+    "width": 1200,
+    "height": 630
+  }
+}

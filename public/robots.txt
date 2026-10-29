@@ -1,0 +1,7 @@
+# robots.txt - Instituto Pró-Vida
+# Domínio oficial candidato: https://institutoprovidarp.com.br
+
+User-agent: *
+Allow: /
+
+Sitemap: https://institutoprovidarp.com.br/sitemap.xml

@@ -1,21 +1,26 @@
 import React from 'react';
 import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { ResponsiveImage, aboutDims } from './ResponsiveImage';
+
+const ABOUT_WIDTHS = [480, 720, 960];
 
 export const AboutSection: React.FC = () => {
   return (
-    <section id="instituto" className="py-20 md:py-28 bg-white border-b border-border-subtle">
+    <section id="instituto" aria-labelledby="instituto-titulo" className="py-20 md:py-28 bg-white border-b border-border-subtle">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Clinic Structure Photo */}
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl overflow-hidden bg-surface-subtle p-2 border border-[#E9DFD6] shadow-card">
-              <div className="rounded-xl overflow-hidden aspect-[4/4.8] max-h-[480px]">
-                <img
-                  src="/assets/clinica-fachada.webp"
+              <div className="rounded-xl overflow-hidden aspect-[4/4.8] max-h-[480px] bg-[#ECE4DC]">
+                <ResponsiveImage
+                  base="/img/fachada"
+                  widths={ABOUT_WIDTHS}
+                  sizes="(min-width: 1024px) 38vw, (min-width: 768px) 45vw, 92vw"
+                  dims={aboutDims ?? undefined}
                   alt="Estrutura e sede do Instituto Pró-Vida em Rio Pardo de Minas"
                   className="w-full h-full object-cover object-[53%_center] transition-transform duration-700 hover:scale-105"
-                  loading="eager"
                 />
               </div>
             </div>
