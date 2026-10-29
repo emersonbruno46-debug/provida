@@ -39,6 +39,17 @@ describe('2. Busca de Atendimentos', () => {
     expect(results.some((s) => s.id === 'odontologia')).toBe(true);
   });
 
+  it('encontra "Medicina do Trabalho" buscando por "trabalho", "aso" ou "admissional"', () => {
+    const r1 = searchServices('trabalho');
+    expect(r1.some((s) => s.id === 'medicina-do-trabalho')).toBe(true);
+
+    const r2 = searchServices('aso');
+    expect(r2.some((s) => s.id === 'medicina-do-trabalho')).toBe(true);
+
+    const r3 = searchServices('admissional');
+    expect(r3.some((s) => s.id === 'medicina-do-trabalho')).toBe(true);
+  });
+
   it('encontra atendimento ao buscar "cardiologia", priorizando a consulta sobre exames', () => {
     const results = searchServices('cardiologia');
     expect(results.length).toBeGreaterThanOrEqual(2);

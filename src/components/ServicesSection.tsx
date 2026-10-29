@@ -2,7 +2,7 @@ import React, { useState, useMemo, useId } from 'react';
 import {
   Search, X, ArrowUpRight, ChevronDown, ChevronUp, Users, HeartHandshake, Brain, Bone, Sparkles,
   ScanLine, HeartPulse, Smile, ActivitySquare, UserCheck, Stethoscope, MessageSquare, Wind, Activity,
-  ShieldAlert, FlaskConical, Apple,
+  ShieldAlert, FlaskConical, Apple, BriefcaseMedical,
 } from 'lucide-react';
 import {
   categoryLabels, serviceCategoryFilters, professionalsForService, whatsappForService,
@@ -14,7 +14,7 @@ import { requestStaffFilter } from '../lib/staffBridge';
 
 const iconMap: Record<string, React.FC<{ className?: string }>> = {
   HeartHandshake, Brain, Bone, Sparkles, ScanLine, HeartPulse, Smile, ActivitySquare, UserCheck,
-  Stethoscope, MessageSquare, Wind, Activity, ShieldAlert, FlaskConical, Apple,
+  Stethoscope, MessageSquare, Wind, Activity, ShieldAlert, FlaskConical, Apple, BriefcaseMedical,
 };
 
 const INITIAL = 6;

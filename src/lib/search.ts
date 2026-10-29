@@ -38,6 +38,10 @@ export const SEARCH_SYNONYMS: Record<string, string[]> = {
   fonoaudiologo: ['fonoaudiologia'],
   fonoaudiologa: ['fonoaudiologia'],
   exame: ['exames'],
+  aso: ['medicina', 'trabalho', 'ocupacional'],
+  ocupacional: ['medicina', 'trabalho'],
+  admissional: ['medicina', 'trabalho'],
+  demissional: ['medicina', 'trabalho'],
 };
 
 /** Junta grafias com espaço/hífen ("ultra som", "pre natal") antes de tokenizar. */

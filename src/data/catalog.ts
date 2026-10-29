@@ -105,6 +105,21 @@ export const specialties: Specialty[] = [
   { id: 'fonoaudiologia', label: 'Fonoaudiologia', aliases: ['fonoaudiólogo', 'fonoaudióloga', 'fono'] },
   { id: 'psicopedagogia', label: 'Psicopedagogia', aliases: ['psicopedagogo', 'psicopedagoga', 'pedagoga', 'pedagogia', 'ABA'] },
   { id: 'enfermagem', label: 'Enfermagem', aliases: ['enfermeiro', 'enfermeira'] },
+  {
+    id: 'medicina-do-trabalho',
+    label: 'Medicina do Trabalho',
+    aliases: [
+      'médico do trabalho',
+      'saúde ocupacional',
+      'aso',
+      'atestado de saúde ocupacional',
+      'exame admissional',
+      'exame demissional',
+      'exame periódico',
+      'ocupacional',
+      'trabalho',
+    ],
+  },
 ];
 
 /**
@@ -169,6 +184,10 @@ export const services: Service[] = [
   { id: 'nutricao', name: 'Nutrição', category: 'outros', kind: 'terapia', iconName: 'Apple', source: 'catalogo',
     description: 'Planejamento alimentar individualizado e acompanhamento nutricional clínico.',
     specialtyIds: ['nutricao'], aliases: [] },
+  { id: 'medicina-do-trabalho', name: 'Medicina do Trabalho', category: 'consultas', kind: 'consulta', iconName: 'BriefcaseMedical', source: 'catalogo',
+    description: 'Avaliação clínica ocupacional, exames admissionais, demissionais, periódicos e emissão de ASO para empresas e colaboradores.',
+    specialtyIds: ['medicina-do-trabalho'], aliases: ['saúde ocupacional', 'aso', 'atestado de saúde ocupacional', 'exame admissional', 'exame demissional', 'exame periódico', 'ocupacional', 'trabalho'],
+    note: 'Consulte a recepção para agendamentos individuais ou corporativos/empresariais.' },
 
   // ---- Consultas derivadas de especialidades confirmadas no corpo clínico ----
   { id: 'clinica-geral', name: 'Clínica Geral', category: 'consultas', kind: 'consulta', iconName: 'Stethoscope', source: 'corpo-clinico',
