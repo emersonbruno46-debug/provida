@@ -7,20 +7,18 @@ import { ResponsiveImage, heroDims } from './ResponsiveImage';
 const HERO_WIDTHS = [640, 960, 1440, 1920];
 
 const HeroPhoto: React.FC = () => (
-  <div className="relative">
-    <div aria-hidden="true" className="hidden lg:block absolute -inset-3 translate-x-3 translate-y-3 rounded-3xl border border-gold/50" />
-    <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden border border-[#E5DACF] shadow-elevated bg-[#ECE4DC]">
-      <ResponsiveImage
-        base="/img/hero"
-        widths={HERO_WIDTHS}
-        sizes="(min-width: 1152px) 560px, (min-width: 1024px) 48vw, 92vw"
-        dims={heroDims ?? undefined}
-        alt="Fachada do Instituto Pró-Vida em Rio Pardo de Minas"
-        priority
-        className="block w-full h-auto aspect-[3/2] object-cover"
-      />
-    </div>
-  </div>
+  <>
+    <ResponsiveImage
+      base="/img/hero"
+      widths={HERO_WIDTHS}
+      sizes="(min-width: 1024px) 64vw, 92vw"
+      dims={heroDims ?? undefined}
+      alt="Fachada do Instituto Pró-Vida em Rio Pardo de Minas"
+      priority
+      className="absolute inset-0 w-full h-full object-cover object-[60%_center] lg:object-[55%_center]"
+    />
+    <div aria-hidden="true" className="hidden lg:block absolute inset-y-0 left-0 w-[42%] bg-gradient-to-r from-[#FAF7F2] via-[#FAF7F2]/70 to-transparent" />
+  </>
 );
 
 export const Hero: React.FC = () => {
@@ -30,10 +28,10 @@ export const Hero: React.FC = () => {
     <section
       id="inicio"
       aria-labelledby="hero-titulo"
-      className="relative overflow-hidden border-b border-[#EFE7DE] bg-[#FAF7F2]"
+      className="relative overflow-hidden border-b border-[#EFE7DE] bg-[#FAF7F2] lg:min-h-[700px] lg:flex lg:items-center"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-10 sm:pt-12 md:pt-14 lg:py-20 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-        <div className="lg:col-span-6 max-w-2xl space-y-5 md:space-y-7">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-8 pb-8 sm:pt-12 md:pt-14 lg:py-20 w-full">
+        <div className="max-w-2xl lg:max-w-[34rem] space-y-5 md:space-y-7">
           <p className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white border border-[#E5DACF] shadow-sm">
             <span aria-hidden="true" className="w-2 h-2 rounded-full bg-wine motion-safe:animate-pulse" />
             <span className="text-[11px] sm:text-xs font-semibold tracking-wider uppercase text-gold-dark">
@@ -98,7 +96,11 @@ export const Hero: React.FC = () => {
           </ul>
         </div>
 
-        <div className="lg:col-span-6">
+      </div>
+
+      {/* Mobile: foto inteira (3:2) abaixo do texto. Desktop: fundo à direita, com menos recorte. */}
+      <div className="px-4 sm:px-6 pb-10 lg:p-0 lg:absolute lg:inset-y-0 lg:right-0 lg:w-[66%] lg:z-0">
+        <div className="relative aspect-[3/2] max-w-6xl mx-auto rounded-2xl overflow-hidden border border-[#E5DACF] shadow-card bg-[#ECE4DC] lg:max-w-none lg:h-full lg:aspect-auto lg:rounded-none lg:border-0 lg:shadow-none">
           <HeroPhoto />
         </div>
       </div>
