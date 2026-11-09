@@ -6,6 +6,7 @@ const LINKS = [
   { href: '#atendimentos', label: 'Atendimentos', mobile: 'Atendimentos' },
   { href: '#profissionais', label: 'Profissionais', mobile: 'Profissionais' },
   { href: '#instituto', label: 'O Instituto', mobile: 'O Instituto' },
+  { href: '#galeria', label: 'Galeria', mobile: 'Galeria de fotos' },
   { href: '#duvidas', label: 'Dúvidas', mobile: 'Dúvidas frequentes' },
   { href: '#contato', label: 'Localização', mobile: 'Localização e contato' },
 ];

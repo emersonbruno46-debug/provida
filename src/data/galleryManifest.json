@@ -1,0 +1,70 @@
+{
+  "fachada": {
+    "width": 1600,
+    "height": 1067
+  },
+  "recepcao": {
+    "width": 1600,
+    "height": 1066
+  },
+  "sala-de-espera": {
+    "width": 1600,
+    "height": 1067
+  },
+  "consultorio-maca": {
+    "width": 1600,
+    "height": 1067
+  },
+  "consultorio-clinico": {
+    "width": 1600,
+    "height": 1067
+  },
+  "consultorio-computador": {
+    "width": 1600,
+    "height": 1067
+  },
+  "bancada-coleta": {
+    "width": 1600,
+    "height": 1067
+  },
+  "cadeira-de-coleta": {
+    "width": 1600,
+    "height": 1067
+  },
+  "material-de-coleta": {
+    "width": 1600,
+    "height": 1067
+  },
+  "raio-x": {
+    "width": 1600,
+    "height": 1067
+  },
+  "mamografia": {
+    "width": 1600,
+    "height": 1067
+  },
+  "tomografia": {
+    "width": 1600,
+    "height": 1067
+  },
+  "densitometria": {
+    "width": 1600,
+    "height": 1067
+  },
+  "ultrassom": {
+    "width": 1600,
+    "height": 1067
+  },
+  "odontologia": {
+    "width": 1600,
+    "height": 1067
+  },
+  "odontologia-instrumentos": {
+    "width": 1600,
+    "height": 1066
+  },
+  "odontologia-sala": {
+    "width": 1600,
+    "height": 1067
+  }
+}

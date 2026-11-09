@@ -14,7 +14,7 @@ export const doctorsData: DoctorItem[] = [
     name: "Dr. Adelhane Martins Sanches",
     specialty: "Clínica Geral",
     category: "medicos",
-    image: "/assets/profissionais/dr-adelhane-martins-sanches.jpg",
+    image: "/assets/profissionais/dr-adelhane-martins-sanches.webp",
     objectPosition: "center 15%"
   },
   {

@@ -4,6 +4,7 @@ import { ServicesSection } from './components/ServicesSection';
 import { BenefitsRibbon } from './components/BenefitsRibbon';
 import { StaffSection } from './components/StaffSection';
 import { AboutSection } from './components/AboutSection';
+import { GallerySection } from './components/GallerySection';
 import { ReviewsSection } from './components/ReviewsSection';
 import { FaqSection } from './components/FaqSection';
 import { ContactSection } from './components/ContactSection';
@@ -21,6 +22,7 @@ export function App() {
         <BenefitsRibbon />
         <StaffSection />
         <AboutSection />
+        <GallerySection />
         {/* Depoimentos ocultos até haver avaliações reais aprovadas (FEATURES.showReviews). */}
         {FEATURES.showReviews && <ReviewsSection />}
         <FaqSection />
