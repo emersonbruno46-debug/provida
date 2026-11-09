@@ -20,7 +20,6 @@ const WIDTHS = [480, 960, 1600];
 
 // original -> slug (a classificação/legendas ficam em src/data/galleryData.ts)
 const FILES = {
-  'IMG_7623.jpg': 'fachada',
   'IMG_7622.jpg': 'recepcao',
   'IMG_7612.jpg': 'sala-de-espera',
   'IMG_7580.jpg': 'consultorio-maca',

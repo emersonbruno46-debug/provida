@@ -31,7 +31,6 @@ const P = (slug: string, category: GalleryCategory, title: string, alt: string):
 export const GALLERY_WIDTHS = [480, 960, 1600];
 
 export const GALLERY: GalleryPhoto[] = [
-  P('fachada', 'estrutura', 'Fachada', 'Fachada do Instituto Pró-Vida, em Rio Pardo de Minas, com a lista de serviços na parede'),
   P('recepcao', 'estrutura', 'Recepção', 'Recepção do Instituto Pró-Vida com balcão de atendimento e cadeiras para espera'),
   P('sala-de-espera', 'estrutura', 'Sala de espera', 'Área de espera com poltronas confortáveis e painel do Instituto Pró-Vida'),
   P('consultorio-maca', 'consultorios', 'Consultório com maca', 'Consultório com mesa, cadeiras e maca de atendimento'),

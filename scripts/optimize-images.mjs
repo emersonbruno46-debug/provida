@@ -46,7 +46,7 @@ function size(f) {
 
 // Profissionais
 for (const file of fs.readdirSync(profSrc)) {
-  const slug = file.replace(/\.(png|jpe?g)$/i, '');
+  const slug = file.replace(/\.(png|jpe?g|webp)$/i, '');
   const input = path.join(profSrc, file);
   const base = path.join(outDir, 'prof', slug);
   const info = await variants(input, base, PROF_WIDTHS);
@@ -61,10 +61,10 @@ for (const file of fs.readdirSync(profSrc)) {
 
 // Hero (fachada)
 {
-  const input = path.join(pub, 'HERO.png');
+  const input = path.join(pub, 'assets', 'hero-fachada.webp');
   const info = await variants(input, path.join(outDir, 'hero'), HERO_WIDTHS);
   manifest.hero = { width: info.width, height: info.height };
-  report.push(['HERO.png', size(input), size(path.join(outDir, 'hero-1440.webp')), size(path.join(outDir, 'hero-1440.avif')), 0]);
+  report.push(['hero-fachada.webp', size(input), size(path.join(outDir, 'hero-1440.webp')), size(path.join(outDir, 'hero-1440.avif')), 0]);
 
   // Imagem de compartilhamento 1200x630 (JPEG para compatibilidade com redes sociais)
   await sharp(input).resize(1200, 630, { fit: 'cover', position: 'centre' }).jpeg({ quality: 80, mozjpeg: true }).toFile(path.join(outDir, 'og-image.jpg'));
