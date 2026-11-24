@@ -21,11 +21,11 @@ export const MAPS_EMBED_URL =
   'https://maps.google.com/maps?q=Rua+Odilio+Torres+Costa+11+Rio+Pardo+de+Minas&t=&z=16&ie=UTF8&iwloc=&output=embed';
 
 /**
- * PENDENTE: domínio oficial. O único indício no projeto é o og:url original
- * (https://institutoprovidarp.com.br/). Pode ser sobrescrito com a variável
- * de ambiente SITE_URL no build.
+ * Domínio oficial: instprovida.com.br (registrado no Registro.br). Na Vercel o domínio
+ * sem "www" redireciona para o "www", que é a URL canônica. Pode ser sobrescrito com
+ * a variável de ambiente SITE_URL no build.
  */
-export const OFFICIAL_URL_CANDIDATE = 'https://institutoprovidarp.com.br';
+export const OFFICIAL_URL_CANDIDATE = 'https://www.instprovida.com.br';
 
 export const FEATURES = {
   /** Só exibir depoimentos quando houver avaliações reais aprovadas. */
